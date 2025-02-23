@@ -14,7 +14,8 @@
             padding: 0;
         }
         nav{
-            background-color: red;
+            background-color: rgb(248, 253, 253);
+            padding: 12px 3px;
         }
 
         ul{
@@ -24,6 +25,9 @@
             list-style: none;
             margin: 0 13px;
 
+        }
+        table{
+            border: 2px solid black;
         }
 
     </style>
@@ -41,7 +45,40 @@
     <h1>Password Manager</h1>
     <p>Secure your digital life with a reliable password manager designed to keep your credentials safe and easily accessible. No more forgetting passwords or struggling to create strong ones—store, generate.</p>
     <h2>Your Password</h2>
+    <table>
+        <tr>
+            <th>Website</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Delete</th>
+            </tr>
+            <tr>
+                <td>CWH</td>
+                <td>prg@code with parag.com</td>
+                </tr>
+
+                <tr>
+                <td>Parag</td>
+                <td>100</td>
+                </tr>
+            </table>
+    
     <h2>Add a Password</h2>
+    <form action="/submit" method="post">
+        <!-- Text input for username -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+    
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+    
+    
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+      </form>
 </div>
 </body>
 </html>
