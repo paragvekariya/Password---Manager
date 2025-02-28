@@ -58,7 +58,7 @@ document.querySelector(".btn").addEventListener("click", (e) => {
   let passwords = localStorage.getItem("passwords");
   console.log(passwords);
 
-  if (passwords == null) {
+  if (!passwords) {
     let json = [];
     json.push({ username: username.value, password: password.value });
     alert("password saved");
