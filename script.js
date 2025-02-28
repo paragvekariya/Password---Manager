@@ -23,7 +23,7 @@ document.querySelector(".btn").addEventListener("click",  (e)=>{
 //Logic for parag
 let tb = document.querySelector("table");
 let data = localStorage.getItem("passwords");
-if (data == null) {
+if (!data) {
   tb.innerHTML = "no data to show";
 } else {
 
